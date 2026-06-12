@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Video Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📹 TechEdu Channel</h1>
+      <p>Your Learning Hub for Tech & Coding</p>
+    </div>
+ 
+    <div class="filter-buttons">
+      <button class="filter-btn active" onclick="filterVideos('all')">All</button>
+      <button class="filter-btn" onclick="filterVideos('JavaScript')">JavaScript</button>
+      <button class="filter-btn" onclick="filterVideos('Python')">Python</button>
+      <button class="filter-btn" onclick="filterVideos('React')">React</button>
+    </div>
+ 
+    <div class="videos-grid" id="videosContainer"></div>
+  </div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
+ 

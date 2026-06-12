@@ -1,0 +1,163 @@
+
+Style · CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+ 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+ 
+.header {
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+ 
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+ 
+.header p {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+ 
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+ 
+.video-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+ 
+.video-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+ 
+.video-thumbnail {
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3em;
+}
+ 
+.video-content {
+  padding: 20px;
+}
+ 
+.video-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+ 
+.creator-info {
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+ 
+.creator-name {
+  font-weight: 600;
+  color: #667eea;
+  font-size: 0.95em;
+}
+ 
+.creator-channel {
+  color: #666;
+  font-size: 0.85em;
+  margin-top: 4px;
+}
+ 
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+ 
+.stat {
+  text-align: center;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 6px;
+}
+ 
+.stat-value {
+  font-weight: bold;
+  color: #667eea;
+  font-size: 1.1em;
+}
+ 
+.stat-label {
+  font-size: 0.75em;
+  color: #999;
+  margin-top: 4px;
+}
+ 
+.video-duration {
+  background: #667eea;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+ 
+.uploaded-date {
+  font-size: 0.8em;
+  color: #999;
+  text-align: right;
+}
+ 
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+ 
+.filter-btn {
+  background: white;
+  color: #667eea;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+ 
+.filter-btn:hover,
+.filter-btn.active {
+  background: #667eea;
+  color: white;
+}
